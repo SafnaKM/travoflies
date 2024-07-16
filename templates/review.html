@@ -1,0 +1,31 @@
+{% load static %}
+<div class="reviews-guest"data-aos="fade-left"data-aos-duration="2400"> <h1>Our <span>Reviews</span></h1></div>
+<section class="review " id="review">
+    <div class="review-detail mySwiper">
+      <div class="review-content swiper-wrapper">
+        {% for i in res_review %}
+            <div class="review-slide swiper-slide">
+              <img src="{{i.img.url}}" alt="">
+                <div class="content">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <p>{{i.name}} <span><br>
+                        Guest Review </span></p>
+                </div>
+                <div class="details">
+                <p> <i class="fa-solid fa-quote-left quote-icon"></i>
+                  <span>{{i.desc}}
+                    <i class="fa-solid fa-quote-right quote-icon"></i></span>
+                </p>
+                </div>
+            </div>
+        {% endfor %}    
+        </div>
+      <div class="swiper-button-next" style="display: none;"></div>
+      <div class="swiper-button-prev" style="display: none;"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+ </section>

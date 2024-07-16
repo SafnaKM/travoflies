@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-wrapper">
+            <div class=" about-content" data-aos="fade-right"data-aos-duration="2400">
+                <p class="head1">Best travel platform </p>
+                <h1 class="heading">About Us</h1>
+                <h6 class="headings">Welcome to <span> Tourist </span></h6>
+                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos excepturi reiciendis, quae distinctio consectetur numquam ratione quod hic, atque eligendi debitis quaerat quis, error exercitationem beatae? Voluptates hic autem ea.</p>
+                <div class="points">
+                    <p><i class="fa fa-arrow-right"></i> First Class Flights</p>
+                    <p><i class="fa fa-arrow-right"></i> Handpicked Hotels</p>
+                    <p><i class="fa fa-arrow-right"></i> First Class Flights</p>
+                    <p><i class="fa fa-arrow-right"></i> First Class Flights</p>
+                </div>
+                <a class="btn" href="#packages">Explore More </a>
+            </div>
+            <div class="images " data-aos="fade-left"data-aos-duration="2400">
+                <img src="{% static 'images/about1.png' %}" alt="" >
+            </div>
+        </div>
+    </div>
+</section>
+{% include 'servicedetail.html' %}
+{% include 'packagedetails.html' %}
+{% endblock content %}
+
+
+
+

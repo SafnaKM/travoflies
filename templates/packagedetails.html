@@ -1,0 +1,48 @@
+{% load static %}
+<section class="packages" id="packages"  data-aos="fade-right"data-aos-duration="2400">
+    <div class="container">
+        <p class="head1">Explore best places</p>
+        <h2 class="p-head">Popular <span> Packages</span></h2>
+        <div class="pkg-row-img">
+            {% for i in result_pkg %}
+            <div class="large-img1">
+                <img src="{{i.img.url}}" alt="">
+                <div class="img-content">
+                    <h2>{{i.pkg_name}}</h2>
+                    <div class="hidden-content">
+                        <span><i class="fa fa-clock"></i>{{i.days}} days</span>
+                        <span><i class="fa fa-user"></i>{{i.usernum}}+</span>
+                        <span><i class="fa fa-location-dot"></i>{{i.location}}</span>
+                    </div>
+                </div>
+                <div class="price-label">
+                    <p>Rs.{{i.price}}/-</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+<!-- destination -->
+<section class="destination" id="destination" data-aos="fade-right" data-aos-duration="2400">
+    <div class="container">
+        <p class="head1">Top destinations</p>
+        <h2 class="p-head">Popular <span>Destination</span></h2>
+        <div class="dest-cards-wrapper">
+            {% for i in result_dest %}
+            <div class="dest-card" data-aos="fade-up" data-aos-duration="1000">
+                <div class="face front">
+                    <img src="{{i.img.url}}" alt="" />
+                    <h3>{{i.dest_name}}</h3>
+                </div>
+                <div class="face back">
+                    <img src="{{i.other_img.url}}" alt="" />
+                    <h6><i class="fa fa-location-dot"></i>{{i.location}},{{i.dest_name}}</h6>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% include 'review.html' %}

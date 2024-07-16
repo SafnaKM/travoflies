@@ -1,0 +1,89 @@
+{% load static %}
+<!-- home -->
+<section class="home "id="home" >
+    <video class="video-slide active" src="{% static 'videos/video1.mp4' %}" autoplay muted loop></video>
+    <video class="video-slide" src="{% static 'videos/video2.mp4' %}" autoplay muted loop></video>
+    <video class="video-slide" src="{% static 'videos/video3.mp4' %}" autoplay muted loop></video>
+    <div class="content active">
+        <h1 data-aos="fade-right"data-aos-duration="1600">Wonderful.<br><span>Island</span></h1>
+        <p class="" data-aos="fade-right"data-aos-duration="1600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+        <a href="#packages"  data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">Explore More</a>
+    </div>
+    <div class="content">
+        <h1>Feel Nature.<br><span>Relax</span></h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+        <a href="#packages" >Explore More</a>
+    </div>
+    <div class="content">
+        <h1 >Adventures.<br><span>Forest</span></h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+        <a href="#packages" >Explore More</a>
+    </div>
+    <div class="media-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+    </div>
+    <div class="slider-navigation">
+        <div class="nav-btn active"></div>
+        <div class="nav-btn"></div>
+        <div class="nav-btn"></div>
+    </div>
+</section>
+<!-- abt -->
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-wrapper">
+            <div class=" about-content" data-aos="fade-right"data-aos-duration="2400">
+                <p class="head1">Best travel platform </p>
+                <h1 class="heading">About Us</h1>
+                <h6 class="headings">Welcome to <span> Tourist </span></h6>
+                <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos excepturi reiciendis, quae distinctio consectetur numquam ratione quod hic, atque eligendi debitis quaerat quis, error exercitationem beatae? Voluptates hic autem ea.</p>
+                <div class="points">
+                    <p><i class="fa fa-arrow-right"></i> First Class Flights</p>
+                    <p><i class="fa fa-arrow-right"></i> Handpicked Hotels</p>
+                    <p><i class="fa fa-arrow-right"></i> First Class Flights</p>
+                    <p><i class="fa fa-arrow-right"></i> First Class Flights</p>
+                </div>
+                <a class="btn" href="#packages">Explore More </a>
+            </div>
+            <div class="images " data-aos="fade-left"data-aos-duration="2400">
+                <img src="{% static 'images/about1.png' %}" alt="" >
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- service -->
+  <div class="service" id="service" data-aos="fade-left"data-aos-duration="2400"> <h1>Our <span>Services</span></h1></div>
+  <section class="services" id="services">
+      <div class="container">
+          <div class="service-wrapper">
+              <div class="s-heading" data-aos="fade-up"data-aos-duration="800">
+                  <i class="fa-solid fa-hotel"></i>
+                  <p> Holiday Packages</p>
+              </div>
+              <div class="s-heading"data-aos="fade-up"data-aos-duration="1200">
+                  <i class="fa-solid fa-plane"></i>
+                  <p> Flight Ticketing</p>
+              </div>
+              <div class="s-heading" data-aos="fade-up"data-aos-duration="1600">
+                  <i class="fa fa-file-lines"></i>
+                  <p> Travel Insurance</p>
+              </div>
+              <div class="s-heading" data-aos="fade-up"data-aos-duration="2000">
+                  <i class="fa-sharp fa-solid fa-passport"></i>
+                  <p> Visa Services </p>
+              </div>
+              <div class="s-heading" data-aos="fade-up"data-aos-duration="2400">
+                  <i class="fa fa-ship"></i>
+                  <p> Cruize Booking</p>
+              </div>
+          </div>
+      </div>
+  </section>
+<!-- package -->
+{% include 'packagedetails.html' %}
+

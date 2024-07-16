@@ -1,0 +1,21 @@
+{% load static %}
+<header class="header"id="header">
+    <div>
+    <i class="fa-brands fa-fly"></i>
+    <a href="#" class="brand">T<span>ravo</span>fly</a>
+    </div>
+    <div class="menu">
+        <div class="menu_items">
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'services' %}">Services</a>
+            <a href="{% url 'destination' %}">Destinations</a>
+            <a href="#footer">Contact</a>
+        </div>
+    </div>
+    <a href="{% url 'enquiry' %}" class="btn ">Send Enquiry</a>
+    <div class="menu-btn">
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-sharp fa-solid fa-xmark"></i>
+    </div>
+</header>
